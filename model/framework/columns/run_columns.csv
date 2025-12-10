@@ -1,1 +1,2 @@
 name,type,direction,description
+gn_activity,float,high,Probability of gram-negative acivity as a proxy for permeability
