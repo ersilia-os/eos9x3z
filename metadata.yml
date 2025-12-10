@@ -2,34 +2,38 @@ Identifier: eos9x3z
 Slug: gram-negative-permeability-proxy
 Status: In progress
 Title: Gram-negative activity as a permeability proxy
-Description: Gram-negative and gram-positive MIC data from CoADD was used to train
-  a Chemprop model that predicts activity against Escherichia coli (gram-negative)
-  with respect to Staphylococcus aureus (gram-positive). Active compounds in both
-  pathogens were labeled as permeable, whereas inactive compounds in gram-negative
-  but active in gram-positive were labeled as impermeable.
+Description: Gram-negative and gram-positive MIC data from CoADD was used to 
+  train a Chemprop model that predicts activity against Escherichia coli 
+  (gram-negative) with respect to Staphylococcus aureus (gram-positive). Active 
+  compounds in both pathogens were labeled as permeable, whereas inactive 
+  compounds in gram-negative but active in gram-positive were labeled as 
+  impermeable.
 Deployment:
-- Local
+  - Local
 Source: Local
 Source Type: External
 Task: Annotation
 Subtask: Activity prediction
 Input:
-- Compound
+  - Compound
 Input Dimension: 1
 Output:
-- Score
+  - Score
 Output Dimension: 1
 Output Consistency: Fixed
-Interpretation: Higher score indicates higher likelihood of permeability gram-negative activity, understood as a proxy for permeability.
+Interpretation: Higher score indicates higher likelihood of permeability 
+  gram-negative activity, understood as a proxy for permeability.
 Tag:
-- Antimicrobial activity
+  - Antimicrobial activity
 Biomedical Area:
-- Antimicrobial resistance
+  - Antimicrobial resistance
 Target Organism:
-- Escherichia coli
-- Staphylococcus aureus
+  - Escherichia coli
+  - Staphylococcus aureus
 Publication Type: Peer reviewed
 Publication Year: 2022
 Publication: https://pubs.acs.org/doi/10.1021/acs.jmedchem.1c01984
-Source Code: https://pubs.acs.org/doi/suppl/10.1021/acs.jmedchem.1c01984/suppl_file/jm1c01984_si_001.zip
+Source Code: 
+  https://pubs.acs.org/doi/suppl/10.1021/acs.jmedchem.1c01984/suppl_file/jm1c01984_si_001.zip
 License: GPL-3.0-or-later
+Incorporation Date: '2025-12-10'
