@@ -2,6 +2,7 @@
 
 Gram-negative and gram-positive MIC data from CoADD was used to train a Chemprop model that predicts activity against Escherichia coli (gram-negative) with respect to Staphylococcus aureus (gram-positive). Active compounds in both pathogens were labeled as permeable, whereas inactive compounds in gram-negative but active in gram-positive were labeled as impermeable.
 
+This model was incorporated on 2025-12-10.
 
 
 ## Information
@@ -34,8 +35,11 @@ Below are the **Output Columns** of the model:
 ### Source and Deployment
 - **Source:** `Local`
 - **Source Type:** `External`
+- **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos9x3z.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos9x3z.zip)
 
 ### Resource Consumption
+- **Model Size (Mb):** `240`
+- **Environment Size (Mb):** `6124`
 
 
 ### References
