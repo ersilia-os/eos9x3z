@@ -1,6 +1,6 @@
 Identifier: eos9x3z
 Slug: gram-negative-permeability-proxy
-Status: In progress
+Status: Ready
 Title: Gram-negative activity as a permeability proxy
 Description: Gram-negative and gram-positive MIC data from CoADD was used to 
   train a Chemprop model that predicts activity against Escherichia coli 
@@ -37,6 +37,18 @@ Source Code:
   https://pubs.acs.org/doi/suppl/10.1021/acs.jmedchem.1c01984/suppl_file/jm1c01984_si_001.zip
 License: GPL-3.0-or-later
 Incorporation Date: '2025-12-10'
+Last Packaging Date: '2025-12-11'
+Release: v1.0.0
 S3: https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos9x3z.zip
+DockerHub: https://hub.docker.com/r/ersiliaos/eos9x3z
+Docker Architecture:
+  - AMD64
+  - ARM64
 Model Size: 240.0
 Environment Size: 6124.0
+Image Size: 6422.47
+Computational Performance 1: 31.26
+Computational Performance 2: 21.94
+Computational Performance 3: 30.54
+Computational Performance 4: 157.43
+Computational Performance 5: 711.59
