@@ -1,0 +1,6 @@
+python: "3.11"
+commands:
+    - ["pip", "numpy", "1.26.4"]
+    - ["pip", "torch", "2.5.1"]
+    - ["pip", "chemprop", "1.6.1"]
+    - ["pip", "git+https://github.com/bp-kelley/descriptastorus@2.7.0"]
