@@ -50,7 +50,7 @@ Below are the **Output Columns** of the model:
 
 ### References
 - **Source Code**: [https://pubs.acs.org/doi/suppl/10.1021/acs.jmedchem.1c01984/suppl_file/jm1c01984_si_001.zip](https://pubs.acs.org/doi/suppl/10.1021/acs.jmedchem.1c01984/suppl_file/jm1c01984_si_001.zip)
-- **Publication**: [https://pubs.acs.org/doi/10.1021/acs.jmedchem.1c01984](https://pubs.acs.org/doi/10.1021/acs.jmedchem.1c01984)
+- **Publication**: [https://doi.org/10.1021/acs.jmedchem.1c01984](https://doi.org/10.1021/acs.jmedchem.1c01984)
 - **Publication Type:** `Peer reviewed`
 - **Publication Year:** `2022`
 - **Ersilia Contributor:** [miquelduranfrigola](https://github.com/miquelduranfrigola)
