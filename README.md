@@ -1,6 +1,6 @@
 # Gram-negative activity as a permeability proxy
 
-Gram-negative and gram-positive MIC data from CoADD was used to train a Chemprop model that predicts activity against Escherichia coli (gram-negative) with respect to Staphylococcus aureus (gram-positive). Active compounds in both pathogens were labeled as permeable, whereas inactive compounds in gram-negative but active in gram-positive were labeled as impermeable.
+Scores compounds for activity against Gram-negative bacteria, treated here as a proxy for whether they penetrate the cell envelope at all. Gurvic and colleagues mined activity data to derive the molecular substructures statistically enriched among compounds that work against Gram-negative organisms, offering concrete design guidance rather than an opaque score. Since activity requires both entry and target engagement, a high value indicates the combination rather than permeability alone.
 
 This model was incorporated on 2025-12-10.Last packaged on 2025-12-11.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2025-12-10.Last packaged on 2025-12-11.
 ### Output
 - **Output Dimension:** `1`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Higher score indicates higher likelihood of permeability gram-negative activity, understood as a proxy for permeability.
+- **Interpretation:** Probability of Gram-negative antibacterial activity, used as a proxy for cell envelope permeability.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
