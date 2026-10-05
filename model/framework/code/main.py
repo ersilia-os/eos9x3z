@@ -26,7 +26,6 @@ with open(input_file, "r") as f:
     smiles_list = [r[0] for r in reader]
 
 tmp_folder = tempfile.mkdtemp(prefix="ersilia-")
-tmp_folder = "tmp"
 os.makedirs(tmp_folder, exist_ok=True)
 tmp_input = os.path.join(tmp_folder, "input.csv")
 with open(tmp_input, "w") as f:
