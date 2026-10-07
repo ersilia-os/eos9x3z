@@ -2,7 +2,7 @@
 
 Scores compounds for activity against Gram-negative bacteria, treated as a proxy for whether they penetrate the cell envelope. Gurvic and colleagues curated single-point MIC data from CDD and CO-ADD into 1,887 compounds, labelling those active against both Staphylococcus aureus and Escherichia coli as permeable and those active only against the Gram-positive organism as impermeable, then trained an ensemble of five Chemprop graph networks on that split. Since activity requires both entry and target engagement, a high value indicates the combination rather than permeability alone.
 
-This model was incorporated on 2025-12-10.Last packaged on 2025-12-11.
+This model was incorporated on 2025-12-10.Last packaged on 2026-10-07.
 
 ## Information
 ### Identifiers
@@ -41,12 +41,12 @@ Below are the **Output Columns** of the model:
 ### Resource Consumption
 - **Model Size (Mb):** `121`
 - **Environment Size (Mb):** `6187`
-- **Image Size (Mb):** `6422.47`
+- **Image Size (Mb):** `6493.9`
 
 **Computational Performance (seconds):**
-- 10 inputs: `31.26`
-- 100 inputs: `30.54`
-- 10000 inputs: `711.59`
+- 10 inputs: `31.88`
+- 100 inputs: `31.57`
+- 10000 inputs: `765.27`
 
 ### References
 - **Source Code**: [https://pubs.acs.org/doi/suppl/10.1021/acs.jmedchem.1c01984/suppl_file/jm1c01984_si_001.zip](https://pubs.acs.org/doi/suppl/10.1021/acs.jmedchem.1c01984/suppl_file/jm1c01984_si_001.zip)
