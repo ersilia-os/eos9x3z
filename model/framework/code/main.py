@@ -3,7 +3,6 @@ import os
 import csv
 import sys
 import tempfile
-import shutil
 
 from chemprop.args import PredictArgs
 from chemprop.train.make_predictions import make_predictions
@@ -25,17 +24,7 @@ with open(input_file, "r") as f:
     next(reader)  # skip header
     smiles_list = [r[0] for r in reader]
 
-tmp_folder = tempfile.mkdtemp(prefix="ersilia-")
-os.makedirs(tmp_folder, exist_ok=True)
-tmp_input = os.path.join(tmp_folder, "input.csv")
-with open(tmp_input, "w") as f:
-    writer = csv.writer(f)
-    writer.writerow(["smiles"])
-    for s in smiles_list:
-        writer.writerow([s])
-tmp_output = os.path.join(tmp_folder, "output.csv")
-
-def run():
+def run(tmp_input, tmp_output):
     argv = [
         "--test_path", f"{tmp_input}",
         "--checkpoint_dir", f"{checkpoints_dir}",
@@ -48,14 +37,24 @@ def run():
     args = PredictArgs().parse_args(argv)
     make_predictions(args)
 
-run()
+# temporary directory is created at run time and removed on exit, even if prediction fails
+with tempfile.TemporaryDirectory(prefix="ersilia-") as tmp_folder:
+    tmp_input = os.path.join(tmp_folder, "input.csv")
+    with open(tmp_input, "w") as f:
+        writer = csv.writer(f)
+        writer.writerow(["smiles"])
+        for s in smiles_list:
+            writer.writerow([s])
+    tmp_output = os.path.join(tmp_folder, "output.csv")
 
-outputs = []
-with open(tmp_output, "r") as f:
-    reader = csv.reader(f)
-    next(reader)
-    for r in reader:
-        outputs += [float(r[1])]
+    run(tmp_input, tmp_output)
+
+    outputs = []
+    with open(tmp_output, "r") as f:
+        reader = csv.reader(f)
+        next(reader)
+        for r in reader:
+            outputs += [float(r[1])]
 
 #check input and output have the same lenght
 input_len = len(smiles_list)
@@ -68,5 +67,3 @@ with open(output_file, "w") as f:
     writer.writerow(["gn_activity"])
     for o in outputs:
         writer.writerow([o])
-
-shutil.rmtree(tmp_folder)
