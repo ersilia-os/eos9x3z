@@ -48,6 +48,7 @@ DockerHub: https://hub.docker.com/r/ersiliaos/eos9x3z
 Docker Architecture:
   - AMD64
   - ARM64
+Apptainer: https://models-sif.s3.eu-north-1.amazonaws.com/eos9x3z_v1.sif
 Model Size: 231.0
 Environment Size: 6192.0
 Image Size: 3304.37
