@@ -1,6 +1,12 @@
 python: "3.11"
 commands:
     - ["pip", "numpy", "1.26.4"]
+    - ["pip", "pandas", "3.0.6"]
+    - ["pip", "rdkit", "2026.3.6"]
+    - ["pip", "scipy", "1.17.1"]
+    - ["pip", "scikit-learn", "1.9.1"]
+    - ["pip", "six", "1.17.0"]
     - ["pip", "torch", "2.5.1"]
     - ["pip", "chemprop", "1.6.1"]
     - ["pip", "git+https://github.com/bp-kelley/descriptastorus@2.7.0"]
+    - ["pip", "numpy", "1.26.4"]
