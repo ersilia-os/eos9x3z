@@ -41,7 +41,7 @@ Source Code:
 License: GPL-3.0-or-later
 Contributor: miquelduranfrigola
 Incorporation Date: '2025-12-10'
-Last Packaging Date: '2026-10-07'
+Last Packaging Date: '2026-11-18'
 Release: v1.1.0
 S3: https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos9x3z.zip
 DockerHub: https://hub.docker.com/r/ersiliaos/eos9x3z
@@ -50,9 +50,9 @@ Docker Architecture:
   - ARM64
 Model Size: 231.0
 Environment Size: 6192.0
-Image Size: 6493.9
-Computational Performance 1: 31.88
-Computational Performance 2: 23.58
-Computational Performance 3: 31.57
-Computational Performance 4: 162.92
-Computational Performance 5: 765.27
+Image Size: 3304.37
+Computational Performance 1: 30.7
+Computational Performance 2: 22.75
+Computational Performance 3: 31.93
+Computational Performance 4: 165.9
+Computational Performance 5: 765.07
